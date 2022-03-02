@@ -1,0 +1,19 @@
+﻿@model IEnumerable<crud_with_mvc.Models.Location>
+@{
+    ViewData["Title"] = "Customer Page";
+}
+<table class="table table-bordered" >
+    <tr>
+        <th>Location</th>
+        <th>Detail</th>
+        
+    </tr>
+    @foreach (var loc in Model)
+    {
+        <tr>
+            <td>@loc.Place</td>
+            <td>@loc.Details</td>
+           
+        </tr>
+    }
+</table>
